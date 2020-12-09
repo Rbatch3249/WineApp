@@ -1,0 +1,35 @@
+.jumbotron{
+    background-color: rgb(211, 0, 63);
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDysaXUNi0St4multIl4UJz3cVhmY6XoqXHA&usqp=CAU);
+    font-family:'Indie Flower', cursive;
+}
+.navbar{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: -80px;
+}
+.card{
+    margin-top: 0px;
+   
+    
+}
+.card-header{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDysaXUNi0St4multIl4UJz3cVhmY6XoqXHA&usqp=CAU);
+    
+}
+.card-body{
+    background-image: linear-gradient(to bottom right, rgba(87, 123, 240, 0), rgb(87, 2, 2));
+    border-color: rgb(131, 83, 97);
+}
+
+button{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#container1{
+    background-color: rgb(131, 68, 87);
+    border-radius: 50%;
+}
+
+body{
+    background-color: rgb(131, 83, 97);
+}
+

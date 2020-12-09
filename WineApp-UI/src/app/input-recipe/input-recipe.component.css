@@ -1,0 +1,143 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1F1A36;
+  font-family: Montserrat, sans-serif;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  min-height: 100vh;
+  margin: 0;
+}
+
+h3 {
+  margin: 10px 0;
+}
+
+h6 {
+  margin: 5px 0;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.card-container {
+  background-color: #231E39;
+  border-radius: 5px;
+  box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+  color: #B3B8CD;
+  padding-top: 5px;
+  position: relative;
+  width: 350px;
+  max-width: 100%;
+  text-align: center;
+}
+.card-container .round {
+  border: 1px solid #F50057;
+  border-radius: 50%;
+  padding: 7px;
+}
+footer {
+  background-color: #222;
+  color: #fff;
+  font-size: 14px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 999;
+}
+
+header{
+  background:#000000;
+  padding:15px;
+  text-align:center;
+  font-family: 'Oswald', sans-serif;
+}
+#second{
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+* {
+  -webkit-transition-property: all;
+  -webkit-transition-duration: .2s;
+  -moz-transition-timing-function: cubic-bezier(100,50,21,6);
+  -moz-transition-property: all;
+  -moz-transition-timing-function: cubic-bezier(100,50,21,6);
+}
+
+
+
+h1{
+  color:#c0c0c0;
+  font-weight:100;
+}
+
+.btn{
+  color:#999;
+  background:rgba(0, 0, 0, 0.5);
+  padding:10px 20px;
+  font-size:12px;
+  text-decoration:none;
+  letter-spacing:2px;
+  text-transform:uppercase;
+}
+
+.btn:hover{
+  border:none;
+  background:rgba(0, 0, 0, 0.4);
+  background:#fff;
+  padding:20px 20px;
+  color:#1b1b1b;
+}
+
+body{
+  background: #000000;
+}
+
+.card{
+    margin-top: 0px;
+    background-image: linear-gradient(to bottom right, rgba(87, 123, 240, 0), rgb(248, 61, 61));
+    text-align: center;
+    margin-left: 400px;
+}
+#dropdownMenuButton1{
+    margin-top: 2%;
+    margin-bottom: 3%;
+    background-color: rgb(236, 85, 74);
+}
+#dropdownMenuButton2{
+    margin-bottom: 3%;
+    background-color: rgb(58, 160, 179);
+}
+#dropdownMenuButton3{
+    margin-bottom: 3%;
+    background-color: rgb(173, 175, 61);
+}
+#dropdownMenuButton4{
+    background-color: rgb(46, 124, 39);
+
+}
+.navbar{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: -80px;
+}
+body{
+
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+

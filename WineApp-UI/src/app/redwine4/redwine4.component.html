@@ -1,0 +1,39 @@
+
+<header>
+  <link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+
+
+  <a href="#" class="btn">Home</a>
+  <a href="http://localhost:4200/ingredients" class="btn">Pairing</a>
+  <a href="http://localhost:4200/wines" class="btn">Wine List</a>
+  <a href="http://localhost:4200/contact" class="btn">About</a>
+</header>
+<div class="container">
+  <h6>Don't like this pairing?</h6>
+  <button type="button" class="btn btn-outline-danger" (click)="goToWineListPage()">Click Here</button>
+
+</div>
+<br>
+<hr>
+<br>
+<body>
+<div class="card">
+  <div class="imgBx">
+    <img class="card-img-top" src="data:image/jpeg;base64,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" alt="Card image cap">
+  </div>
+  <div class="details">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Brand: B Lovely</li>
+      <li class="list-group-item">Country: USA</li>
+      <li class="list-group-item">State: Washington</li>
+      <li class="list-group-item">Type: Red</li>
+      <li class="list-group-item">Varietal: Red Blend</li>
+      <li class="list-group-item">Taste: Juicy, Cherry, Berry</li>
+      <li class="list-group-item"> Body: Light-bodied</li>
+      <li class="list-group-item">Price: $13.99</li>
+    </ul>
+  </div>
+</div>
+
+</body>
+

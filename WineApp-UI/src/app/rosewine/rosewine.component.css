@@ -1,0 +1,95 @@
+header{
+  background:#000000;
+  padding:75px;
+  text-align:center;
+  font-family: 'Oswald', sans-serif;
+
+}
+* {
+  -webkit-transition-property: all;
+  -webkit-transition-duration: .2s;
+  -moz-transition-timing-function: cubic-bezier(100,50,21,6);
+  -moz-transition-property: all;
+  -moz-transition-timing-function: cubic-bezier(100,50,21,6);
+}
+
+
+
+h1{
+  color:#c0c0c0;
+  font-weight:100;
+}
+
+.btn{
+  color:#999;
+  background:rgba(0, 0, 0, 0.5);
+  padding:10px 20px;
+  font-size:12px;
+  text-decoration:none;
+  letter-spacing:2px;
+  text-transform:uppercase;
+}
+
+.btn:hover{
+  border:none;
+  background:rgba(0, 0, 0, 0.4);
+  background:#fff;
+  padding:20px 20px;
+  color:#1b1b1b;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.card {
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 300px;
+  height: 400px;
+  background: #000000;
+  overflow: hidden;
+}
+.card .imgBx,
+.card .details {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  transition: .5s;
+}
+.card .imgBx {
+  top: 0;
+  left: 0;
+}
+.card:hover .imgBx {
+  top: 0;
+  left: -100%;
+}
+.card .imgBx img {
+  width: 100%;
+}
+.card .details {
+  background: #000000;
+  top: 0;
+  left: 100%;
+  padding: 10px 30px;
+}
+.card:hover .details {
+  top: 0;
+  left: 0%;
+}
+
+.card .details p {
+  margin: 0px;
+  color: #fff;
+}
+
+
+
+h6{
+  color: #960a3a;
+}
+

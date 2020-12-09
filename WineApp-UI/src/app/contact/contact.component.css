@@ -1,0 +1,151 @@
+@import url(http://fonts.googleapis.com/css?family=Calibri:400,300,700);
+
+body {
+  font-family: 'Lato', sans-serif
+}
+
+h1 {
+  margin-bottom: 9px
+}
+
+label {
+  color: #333
+}
+
+.btn-send {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  width: 80%;
+  margin-left: 3px
+}
+
+.help-block.with-errors {
+  color: #ff5050;
+
+}
+
+.card {
+  margin-left: 10px;
+  margin-right: 10px
+}
+#headerimage{
+  background-repeat: no-repeat;
+  background-size:contain;
+
+}
+header{
+  background:#000000;
+  padding:75px;
+  text-align:center;
+  font-family: 'Oswald', sans-serif;
+}
+#second{
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+* {
+  -webkit-transition-property: all;
+  -webkit-transition-duration: .2s;
+  -moz-transition-timing-function: cubic-bezier(100,50,21,6);
+  -moz-transition-property: all;
+  -moz-transition-timing-function: cubic-bezier(100,50,21,6);
+}
+
+
+
+h1{
+  color:#c0c0c0;
+  font-weight:100;
+}
+
+.btn{
+  color: #ffffff;
+  background:rgba(0, 0, 0, 0.5);
+  padding:10px 20px;
+  font-size:12px;
+  text-decoration:none;
+  letter-spacing:2px;
+  text-transform:uppercase;
+}
+
+.btn:hover{
+  border:none;
+  background:rgba(0, 0, 0, 0.4);
+  background:#fff;
+  padding:20px 20px;
+  color:#1b1b1b;
+}
+
+body {
+  background-color: #4A148C;
+  font-family: 'Calibri', sans-serif !important
+}
+
+.card {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid #d2d2dc;
+  border-radius: 2px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgb(249, 249, 250);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(212, 182, 212, 1);
+  box-shadow: 0px 0px 5px 0px rgb(161, 163, 164)
+}
+
+.card .card-body {
+  padding: 1rem 1rem
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 1.25rem
+}
+
+.title {
+  font-size: 25px;
+  font-weight: 300;
+  margin-top: 17px;
+  color: #544a26
+}
+
+.description {
+  font-size: 14px;
+  color: #867f64
+}
+
+.mt-30 {
+  margin-top: 30px
+}
+
+.modal {
+  text-align: center !important;
+  margin-top: 50px
+}
+
+.btn-center {
+  margin-top: 200px
+}
+
+.btn:focus {
+  outline: none
+}
+
+.btn {
+  border-radius: 2px;
+  text-transform: capitalize;
+  font-size: 15px;
+  padding: 10px 19px;
+  cursor: pointer;
+  color: #fff;
+  width: 100%
+}
+
+
+

@@ -1,0 +1,54 @@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Wine Pair Finder</h1>
+    <p class="lead">Trust us to pair our wine with your favorite meals!</p>
+  </div>
+</div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active " href="#">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link active " href="http://localhost:4200/wines">Wine List </a>
+      <a class="nav-item nav-link active " href="http://localhost:4200/ingredients">Perfect Pairing </a>
+    </div>
+  </div>
+</nav>
+<body>
+
+<div class="container">
+  <div class="row">
+      <div class="col-lg-6 mb-4">
+          <div class="card">
+              <div class="card-body">
+                  <h5 class="card-title">Find the perfect wine pairing with your meal!</h5>
+                  <p class="card-text">
+                    Wine Pair Finder promises you will love our selection
+                  </p>
+
+                  <button class="btn btn-danger" (click)= "goToIngredientsPage()">Pair Now!</button>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-6 mb-4">
+          <div class="card">
+              <div class="card-body">
+                  <h5 class="card-title">See our Wine list!</h5>
+                  <p class="card-text">
+                    We offer over 40 different wines to pair with your favorite meal!
+                  </p>
+                  <button class="btn btn-danger" (click)="goToWineListPage()">go!</button>
+
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+</body>
+

@@ -1,0 +1,69 @@
+<header>
+<link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+
+
+<a href="#" class="btn">Home</a>
+<a href="http://localhost:4200/ingredients" class="btn">Pairing</a>
+<a href="http://localhost:4200/wines" class="btn">Wine List</a>
+<a href="http://localhost:4200/contact" class="btn">About</a>
+</header>
+<body>
+<div class="container">
+  <div class="card">
+    <div class="face face1">
+      <div class="content">
+        <div class="icon">
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+    <div class="face face2">
+      <div class="content">
+        <h3>
+          <a href="#" target="_blank">{{wines.brand}}</a>
+        </h3>
+        <p>{{wines.wineType}}</p>
+        <p>{{wines.varietal}}</p>
+        <p>{{wines.country}}</p>
+        <p>{{wines.state_region}}</p>
+        <p>{{wines.taste}}</p>
+        <p>{{wines.price | currency}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="face face1">
+      <div class="content">
+        <div class="icon">
+          <i class="fa fa-twitter-square" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+    <div class="face face2">
+      <div class="content">
+        <h3>
+          <a href="https://www.totalwine.com/"  target="_blank">Buy it Today!</a>
+        </h3>
+        <p>Total Wines</p>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="face face1">
+      <div class="content">
+        <div class="icon">
+          <i class="fa fa-github-square" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+    <div class="face face2">
+      <div class="content">
+        <h3>
+          <a href="http://localhost:4200/wines"target="_blank">See our Wine List</a>
+        </h3>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+

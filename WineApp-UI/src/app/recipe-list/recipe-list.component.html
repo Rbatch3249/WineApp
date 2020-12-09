@@ -1,0 +1,71 @@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Wine Pair Finder</h1>
+    <p class="lead">Trust us to pair our wine with your favorite meals!</p>
+  </div>
+</div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active " href="#">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link active " href="http://localhost:4200/wines">Wine List </a>
+      <a class="nav-item nav-link active " href="http://localhost:4200/ingredients">Perfect Pairing </a>
+    </div>
+  </div>
+</nav>
+<body>
+
+
+  <div class="recipe-detail" *ngIf="recipe">
+    <div class="recipe-sidebar">
+      <h2 class="recipe-title" >{{ recipe.title | uppercase }}</h2>
+      <img class="recipe-img" src="{{recipe.image}}" alt="">
+      <ul class="ingredients-list">
+        <li class="ingredient-item" *ngFor="let ingredient of recipe.extendedIngredients">
+          <img class="ingredient-img" src="{{ingredient.image}}" alt="">
+          <p>{{ingredient.originalString}}</p>
+        </li>
+      </ul>
+    </div>
+    <div class="recipe-main">
+      <h3 class="directions-title">Directions</h3>
+      <ul *ngIf="recipe.instructions === null">
+        <p>Opps... Directions could not be found.</p>
+      </ul>
+      <ul *ngFor="let instructions of recipe.analyzedInstructions">
+        <li *ngFor="let steps of instructions.steps">
+          <p>{{steps.step}}</p>
+        </li>
+      </ul>
+      <p>For more details, visit <a href="{{recipe.sourceUrl}}" target="_blank">{{recipe.sourceName}}</a></p>
+      <button (click)="goBack()">go back</button>
+    </div>
+    <div class="additional-info">
+      <ul class="nutrition-list">
+        <h1>Nutrition Information</h1>
+        <p>Vegetarian: {{recipe.vegetarian}}</p>
+        <p>Vegan: {{recipe.vegan}}</p>
+        <p>Gluten Free: {{recipe.glutenFree}}</p>
+        <p>Dairy Free: {{recipe.dairyFree}}</p>
+        <p>Healty Choice: {{recipe.veryHealthy}}</p>
+        <p>Weight Watcher Smart Points: {{recipe.weightWatcherSmartPoints}}</p>
+        <hr>
+        <p>Caloric Breakdown</p>
+        <p>Fat: {{recipe.nutrition.caloricBreakdown.percentFat}}%</p>
+        <p>Carbs: {{recipe.nutrition.caloricBreakdown.percentCarbs}}%</p>
+        <p>Protein: {{recipe.nutrition.caloricBreakdown.percentProtein}}%</p>
+        <hr>
+        <li *ngFor="let nutrient of recipe.nutrition.nutrients">
+          <p>{{nutrient.title}}: {{nutrient.amount}}{{nutrient.unit}} ({{nutrient.percentOfDailyNeeds}}% DV)</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
